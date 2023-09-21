@@ -1,0 +1,8 @@
+.custom-input {
+    --mdc-filled-text-field-label-text-color: #707070;
+    
+    & .mdc-floating-label {
+        transform: translateY(-106%) scale(0.75) !important;
+        color: var(--mdc-filled-text-field-label-text-color) !important;
+    }
+}
