@@ -1,8 +1,28 @@
 .custom-input {
     --mdc-filled-text-field-label-text-color: #707070;
-    
-    & .mdc-floating-label {
+
+    .mat-mdc-form-field-infix {
+        min-height: 48px;
+    }
+
+    .mat-mdc-floating-label {
         transform: translateY(-106%) scale(0.75) !important;
         color: var(--mdc-filled-text-field-label-text-color) !important;
+        line-height: 2rem !important;
+        background-color: red;
     }
+
+    .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+        top: 34px
+    }
+
+    .mat-mdc-form-field-input-control.mat-mdc-form-field-input-control {
+        line-height: 1.5rem;
+    }
+
+    .mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+        padding-bottom: 0;
+    }
+
+    & .mat-mdc-input-element {}
 }
